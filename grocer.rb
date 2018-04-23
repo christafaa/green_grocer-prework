@@ -27,7 +27,9 @@ def apply_coupons(cart, coupons)
       else
         result[item_name] = item_stats
       end
-
+    end
+  end
+  result
 
 end
 
