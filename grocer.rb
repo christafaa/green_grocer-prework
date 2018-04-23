@@ -25,6 +25,7 @@ def apply_coupons(cart, coupons)
       result[coupon_name][:count] -= coupon[:num]
       coupon_key = "#{coupon_name} W/COUPON"
       if result.has_key?(coupon_key)
+        result[coupon_key]
 
 
 
