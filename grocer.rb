@@ -19,7 +19,7 @@ def apply_coupons(cart, coupons)
 
   return cart if coupons.length == 0
 
-  
+  coupons.each do |coupon|
 
 
 
