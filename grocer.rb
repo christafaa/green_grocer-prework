@@ -30,7 +30,6 @@ def apply_coupons(cart, coupons)
     end
   end
   result
-
 end
 
 def apply_clearance(cart)
