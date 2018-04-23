@@ -8,6 +8,10 @@ def consolidate_cart(cart)
       else
         result[item_name] = item_stats
         result[item_name][:count] = 1
+      end
+    end
+  end
+  result
 end
 
 def apply_coupons(cart, coupons)
