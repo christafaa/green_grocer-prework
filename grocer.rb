@@ -53,5 +53,7 @@ def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   applied_coupons = apply_coupons(consolidated_cart, coupons)
   applied_clearance = apply_clearance(applied_coupons)
-  
+
+  total = 0
+  applied_clearance.each do |item_name, item_stats|
 end
