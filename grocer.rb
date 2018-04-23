@@ -26,6 +26,8 @@ def apply_coupons(cart, coupons)
       coupon_key = "#{coupon_name} W/COUPON"
       if result.has_key?(coupon_key)
         result[coupon_key][:count] += 1
+      else
+        result[coupon_key] = {:price => coupon[:cost], :clearance => result[coupon_name][:clearance], :count => 1}
 
 
 
