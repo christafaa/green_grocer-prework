@@ -22,10 +22,10 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     coupon_name = coupon[:item]
     if result.has_key?(coupon_name)
-      result[coupon_name][:count] -= coupon[:num] if result[coupon_name][:count] > 0
+      result[coupon_name][:count] -= coupon[:num] #if result[coupon_name][:count] > 0
       coupon_key = "#{coupon_name} W/COUPON"
       if result.has_key?(coupon_key)
-        result[coupon_key][:count] += 1 if result[coupon_name][:count] > 0
+        result[coupon_key][:count] += 1 #if result[coupon_name][:count] > 0
       else
         result[coupon_key] = {
           :price => coupon[:cost],
