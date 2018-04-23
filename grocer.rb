@@ -58,4 +58,7 @@ def checkout(cart, coupons)
   applied_clearance.each do |item_name, item_stats|
     item_total = item_stats[:price] * item_stats[:count]
     total += item_total
+  end
+
+  if total > 100
 end
