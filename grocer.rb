@@ -57,4 +57,5 @@ def checkout(cart, coupons)
   total = 0
   applied_clearance.each do |item_name, item_stats|
     item_total = item_stats[:price] * item_stats[:count]
+    total += item_total
 end
