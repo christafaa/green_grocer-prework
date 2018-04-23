@@ -43,6 +43,9 @@ def apply_clearance(cart)
   result.each do |item_name, item_stats|
     if item_stats[:clearance]
       percentage = item_stats[:price].to_f * 0.2
+      item_stats[:price] -= percentage
+    end
+  end
 end
 
 def checkout(cart, coupons)
