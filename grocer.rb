@@ -30,7 +30,8 @@ def apply_coupons(cart, coupons)
         result[coupon_key] = {
           :price => coupon[:cost],
           :clearance => result[coupon_name][:clearance],
-          :count => 1}
+          :count => 1
+        }
       end
     end
   end
