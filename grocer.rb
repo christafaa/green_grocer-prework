@@ -17,7 +17,7 @@ end
 def apply_coupons(cart, coupons)
   result = {}
 
-  return cart if !coupons 
+  return cart if coupons.length == 0
 
   cart.each do |item_name, item_stats|
     coupons.each do |coupon|
