@@ -23,11 +23,14 @@ def apply_coupons(cart, coupons)
     coupons.each do |coupon|
       if item_name == coupon[:item]
         if result.has_key?(item_name)
+          
 
-        
         item_stats[:count] = item_stats[:count] - coupon[:num]
         result["#{item_name} W/COUPON"] = {:price => coupon[:cost], :clearance => item_stats[:clearance], :count => discount_count}
         result[item_name] = item_stats
+
+
+
       else
         result[item_name] = item_stats
       end
