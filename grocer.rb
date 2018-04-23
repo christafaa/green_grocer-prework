@@ -18,6 +18,7 @@ def apply_coupons(cart, coupons)
   cart.each do |item_name, item_stats|
     coupons.each do |coupon|
       if item_name == coupon[:item]
+        item_count = item_stats[:count]
 end
 
 def apply_clearance(cart)
