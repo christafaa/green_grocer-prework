@@ -6,7 +6,7 @@ def consolidate_cart(cart)
       if result.has_key?(item_name)
         result[item_name][:count] += 1
       else
-        result[item_name] = 
+        result[item_name] = item_stats
 end
 
 def apply_coupons(cart, coupons)
