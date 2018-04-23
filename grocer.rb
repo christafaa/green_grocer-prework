@@ -22,7 +22,7 @@ def apply_coupons(cart, coupons)
       if item_name == coupon[:item]
         discount_count = coupon[:num] item_stats[:count]
         item_stats[:count] = item_stats[:count] % coupon[:num]
-        result["#{item_name} W/COUPON"] = {:price => coupon[:cost], :clearance => item_stats[:clearance], :count =>}
+        result["#{item_name} W/COUPON"] = {:price => coupon[:cost], :clearance => item_stats[:clearance], :count => discount_count}
 
 end
 
