@@ -3,7 +3,7 @@ def consolidate_cart(cart)
 
   cart.each do |item|
     item.each do |item_name, item_stats|
-      
+      if result.has_key?(item_name)
 end
 
 def apply_coupons(cart, coupons)
