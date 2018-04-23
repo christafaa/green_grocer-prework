@@ -46,6 +46,7 @@ def apply_clearance(cart)
       item_stats[:price] -= percentage
     end
   end
+  result
 end
 
 def checkout(cart, coupons)
