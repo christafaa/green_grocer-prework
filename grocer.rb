@@ -41,6 +41,8 @@ end
 def apply_clearance(cart)
   result = cart
   result.each do |item_name, item_stats|
+    if item_stats[:clearance]
+      item_stats[:price] = item_stats[:price].to_f * .20
 end
 
 def checkout(cart, coupons)
