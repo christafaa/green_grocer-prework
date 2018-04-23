@@ -15,7 +15,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  result = {}
+  result = cart
 
   return cart if coupons.length == 0
 
