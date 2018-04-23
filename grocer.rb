@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
         item_count = item_stats[:count]
         discount_count = coupon[:num]
         item_stats[:count] = item_stats[:count] % discount_count
-        result["#{item_name} W/COUPON"]
+        result["#{item_name} W/COUPON"] = {}
 
 end
 
