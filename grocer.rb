@@ -18,7 +18,7 @@ def apply_coupons(cart, coupons)
   result = {}
 
   return cart if coupons.length == 0
-
+=begin
   cart.each do |item_name, item_stats|
     coupons.each do |coupon|
       if item_name == coupon[:item]
@@ -36,6 +36,7 @@ def apply_coupons(cart, coupons)
       end
     end
   end
+=end
   result
 end
 
