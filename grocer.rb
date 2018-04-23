@@ -20,16 +20,18 @@ def apply_coupons(cart, coupons)
   return cart if coupons.length == 0
 
   coupons.each do |coupon|
+    coupon_name = coupon[:item]
+    if result.has_key?(coupon_name)
 
 
 
-  
+
 =begin
   cart.each do |item_name, item_stats|
     coupons.each do |coupon|
       if item_name == coupon[:item]
         if result.has_key?(item_name)
-          
+
 
         item_stats[:count] = item_stats[:count] - coupon[:num]
         result["#{item_name} W/COUPON"] = {:price => coupon[:cost], :clearance => item_stats[:clearance], :count => discount_count}
